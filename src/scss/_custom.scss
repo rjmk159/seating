@@ -1,5 +1,36 @@
 // Here you can add other styles
 .c-sidebar {
-  color: #fff;
+  color: #000;
   background: #e95f35;
+}
+ul.nav.nav-tabs {
+  margin-bottom: 16px;
+}
+.nav-link {
+  max-height: 24px;
+  border: none;
+  color: #fff;
+  &:hover {
+    border: 0;
+    border-radius: 0;
+    color: #fff;
+  }
+  &.active {
+    color: #000 !important;
+    background: #d2d2d2 !important;
+    border: 0;
+    border-radius: 0;
+    font-weight: 600;
+  }
+}
+// card
+.card {
+  border-radius: 0;
+  border: 0;
+  .card-body {
+    padding: 12px 8px;
+  }
+}
+.c-main .card {
+  min-height: 500px;
 }

@@ -1,0 +1,21 @@
+.c-sidebar {
+  padding: 8px;
+  font-size: 12px;
+  .sidebar {
+    &-select {
+      &__dropdown-indicator {
+        padding: 0;
+      }
+      &__control {
+        min-height: 24px;
+      }
+    }
+    &__search {
+      margin-bottom: 24px;
+    }
+    &__list {
+      max-height: 300px;
+      overflow: auto;
+    }
+  }
+}

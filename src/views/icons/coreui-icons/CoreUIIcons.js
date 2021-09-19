@@ -5,6 +5,7 @@ import { getIconsView } from '../brands/Brands.js'
 import { DocsLink } from 'src/reusable'
 
 const CoreUIIcons = () => {
+  console.log(freeSet)
   return (
     <CCard>
       <CCardHeader>

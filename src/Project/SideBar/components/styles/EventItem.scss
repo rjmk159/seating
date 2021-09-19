@@ -1,0 +1,18 @@
+.event-item {
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4px;
+    border: 1px solid #ececec;
+  }
+  &__favorite-edit {
+    width: 20px;
+  }
+  &__desc {
+    width: 100%;
+    p {
+      margin: 0;
+    }
+  }
+}
