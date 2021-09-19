@@ -8,10 +8,15 @@ import {
   CLabel,
   CFormGroup,
   CInput,
-  CSelect,
+  CInputGroup,
+  CInputGroupPrepend,
+  CInputGroupText,
+  CInputGroupAppend,
 } from "@coreui/react";
+import CIcon from "@coreui/icons-react";
+import { freeSet } from "@coreui/icons";
 import Select from "react-select";
-import EventItem from '../components/EventItem';
+import EventItem from "../components/EventItem";
 const options = [
   { value: "chocolate", label: "Recently used" },
   { value: "strawberry", label: "Favorite" },
@@ -23,7 +28,7 @@ const SidebarObject = () => {
     <>
       <CRow>
         <CCol xs="12" sm="12">
-          <CCard>
+          <CCard color="gradient-secondary">
             <CCardBody>
               <CRow>
                 <CCol xs="12">
@@ -86,16 +91,25 @@ const SidebarObject = () => {
       </CRow>
       <CRow className="sidebar__search">
         <CCol xs="12" sm="12">
-          <CLabel htmlFor="vat">Search</CLabel>
-          <CInput id="search" placeholder="Search" />
+          <CInputGroup>
+            <CInput type="text" id="username3" placeholder="Search" />
+            <CInputGroupAppend>
+              <CInputGroupText>
+                <CIcon content={freeSet.cilSearch} />
+              </CInputGroupText>
+            </CInputGroupAppend>
+          </CInputGroup>
+          {/* <CLabel htmlFor="vat">Search</CLabel>
+          <CInput id="search" placeholder="Search" /> */}
         </CCol>
       </CRow>
       <CRow className="sidebar__list">
         <CCol xs="12" sm="12">
           <CCard>
-            <CCardBody>
-            {[...Array(19).keys()].map((el) => (<EventItem /> ))}
-              
+            <CCardBody color="gradient-secondary">
+              {[...Array(19).keys()].map((el) => (
+                <EventItem />
+              ))}
             </CCardBody>
           </CCard>
         </CCol>

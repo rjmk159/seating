@@ -5,6 +5,11 @@
     justify-content: space-between;
     padding: 4px;
     border: 1px solid #ececec;
+    &:hover {
+      background-color: #fff;
+      transition: 0.2s ease-in-out;
+      cursor: pointer;
+    }
   }
   &__favorite-edit {
     width: 20px;
@@ -14,5 +19,12 @@
     p {
       margin: 0;
     }
+  }
+}
+
+.modal-header {
+  cursor: move;
+  h4 {
+    margin-bottom: 0;
   }
 }

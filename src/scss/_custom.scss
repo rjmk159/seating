@@ -7,7 +7,8 @@ ul.nav.nav-tabs {
   margin-bottom: 16px;
 }
 .nav-link {
-  max-height: 24px;
+  max-height: 36px;
+  // margin-bottom: -2px;
   border: none;
   color: #fff;
   &:hover {
@@ -25,12 +26,17 @@ ul.nav.nav-tabs {
 }
 // card
 .card {
-  border-radius: 0;
-  border: 0;
+  // border-radius: 0;
+  border-width: 0;
   .card-body {
     padding: 12px 8px;
   }
 }
 .c-main .card {
   min-height: 500px;
+}
+.c-footer {
+  color: #3c4b64;
+  background: #ffffff;
+  border-top: 1px solid #d8dbe0;
 }

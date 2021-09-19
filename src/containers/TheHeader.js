@@ -3,14 +3,10 @@ import { useSelector, useDispatch } from "react-redux";
 import {
   CHeader,
   CToggler,
-  CHeaderBrand,
+
   CHeaderNav,
   CHeaderNavItem,
   CButton,
-  CHeaderNavLink,
-  CSubheader,
-  CBreadcrumbRouter,
-  CLink,
 } from "@coreui/react";
 import CIcon from "@coreui/icons-react";
 
@@ -56,9 +52,9 @@ const TheHeader = () => {
         className="ml-3 d-md-down-none"
         onClick={toggleSidebar}
       />
-      <CHeaderBrand className="mx-auto d-lg-none" to="/">
+      {/* <CHeaderBrand className="mx-auto d-lg-none" to="/">
         <CIcon name="logo" height="48" alt="Logo" />
-      </CHeaderBrand>
+      </CHeaderBrand> */}
 
       <CHeaderNav className="d-md-down-none mr-auto">
         <CHeaderNavItem className="px-3">
@@ -85,15 +81,15 @@ const TheHeader = () => {
         </CHeaderNavItem>
         <CHeaderNavItem className="px-3">PDF</CHeaderNavItem>
         <CHeaderNavItem className="px-3">
-          <CButton block variant="outline" color="primary">
+          <CButton block variant="outline" color="danger">
           <CIcon content={freeSet.cilLink} /> Share
           </CButton>
         </CHeaderNavItem>
-        <CHeaderNavItem className="px-3">
-          <CButton block color="primary">
+        {/* <CHeaderNavItem className="px-3">
+          <CButton block color="danger">
             Primary
           </CButton>
-        </CHeaderNavItem>
+        </CHeaderNavItem> */}
 
 
         {/* <TheHeaderDropdownNotif/>
